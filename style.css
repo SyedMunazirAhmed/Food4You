@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    
+   
+    background-size:cover;
+    position: relative;
+    background-image: url(assets/a_01.png); 
+    background-repeat: no-repeat;
+    height: 135vh;
+
+
+}
+.nav-link {
+    /* padding-right: 75px; */
+    padding-left: 75px;
+    color: rgb(0, 0, 0) !important;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 6px;
+}
+.second{
+    font-weight: 900;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.right{
+    font-weight: 900;
+    font-family: 'Cabin Sketch', Times,serif;
+    font-size: 22px;
+    line-height: auto;
+}
+.choose{
+    margin-top: 8rem;
+}
+.horizontal-stripes {   background: repeating-linear-gradient( 180deg, #fff, #fff 150px, #8d8e39ac 150px, #8d8e39ac 300px); }
