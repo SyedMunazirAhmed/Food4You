@@ -36,4 +36,23 @@
 .choose{
     margin-top: 8rem;
 }
-.horizontal-stripes {   background: repeating-linear-gradient( 180deg, #fff, #fff 150px, #8d8e39ac 150px, #8d8e39ac 300px); }
+.horizontal-stripes {  
+     background: repeating-linear-gradient( 180deg, #fff, #fff 150px, #8d8e39ac 150px, #8d8e39ac 300px); 
+}
+.pre{
+    background-size:cover;
+    position:relative   ;
+    background-repeat: no-repeat;
+    background-image: url(assets/3759618_13.png);
+   
+}
+.aft{
+    background-image: url(assets/Image1_03.png);
+ 
+    position: relative;
+}
+.active{
+    background-image: url(assets/Image2_03.png);
+ 
+    position: relative;
+}
