@@ -4,15 +4,11 @@
     font-family: 'Roboto', sans-serif;
 }
 .header{
-    
-   
     background-size:cover;
     position: relative;
     background-image: url(assets/a_01.png); 
     background-repeat: no-repeat;
     height: 135vh;
-
-
 }
 .nav-link {
     /* padding-right: 75px; */
@@ -34,7 +30,8 @@
     line-height: auto;
 }
 .choose{
-    margin-top: 8rem;
+    margin-top: 5rem;
+    padding: 6rem;
 }
 .horizontal-stripes {  
      background: repeating-linear-gradient( 180deg, #fff, #fff 150px, #8d8e39ac 150px, #8d8e39ac 300px); 
