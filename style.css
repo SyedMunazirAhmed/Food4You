@@ -37,7 +37,8 @@
      background: repeating-linear-gradient( 180deg, #fff, #fff 150px, #8d8e39ac 150px, #8d8e39ac 300px); 
 }
 .pre{
-    background-size:cover;
+    background-size: auto;
+    
     position:relative   ;
     background-repeat: no-repeat;
     background-image: url(assets/3759618_13.png);
@@ -45,11 +46,78 @@
 }
 .aft{
     background-image: url(assets/Image1_03.png);
- 
-    position: relative;
+    background-size: contain;
+    position:relative   ;
+    background-repeat: no-repeat;
+    
+    
 }
 .active{
     background-image: url(assets/Image2_03.png);
- 
-    position: relative;
+    background-size: contain;
+    position:relative   ;
+    background-repeat: no-repeat;
+   
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    padding-left: 25px;
+    padding-top: 15px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    z-index: 5;
+}
+
+.overlay::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    left:0;
+    bottom: 50px;
+    z-index: -2;
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
+}
+ .overlay::before{
+    bottom: 0px;
+}
+
+.head-text{
+    font-size: 20px;
+
+}
+.other-text{
+  font-size: 25px;
+}
+
+
+.reservation{
+    font-size: 30px;
+    padding-left: 40px;
+}
+.book{
+    font-weight: 900;
+    font-size:65px;
+    font-family: 'Cabin Sketch', Times,serif;
+}
+
+.footer{
+  
+    background-size:contain;
+    position:relative ;
+    background-repeat: no-repeat;
+    background: #000000;
+    background: -webkit-linear-gradient(rgba(19, 19, 21, 0.8), rgba(24, 19, 20, 0.8)), url("assets/BG-Image_03.jpg");
+}
+.copy{
+    margin-top: 8rem;
+}
+.location{
+    margin: 13rem 0 0 6rem;
 }
