@@ -1,14 +1,62 @@
+@font-face {
+    font-family: Handwritten;
+    src: url(handwritten.ttf);
+  }
 *{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    
 }
+
 .header{
     background-size:cover;
     position: relative;
     background-image: url(assets/a_01.png); 
     background-repeat: no-repeat;
     height: 135vh;
+}
+.number{
+    font-size: 20px;
+}
+.exp{
+    font-size: 18px;
+}
+.nav-link {
+    /* padding-right: 75px; */
+    padding-left: 75px;
+    color: rgb(0, 0, 0) !important;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 6px;
+}
+.second{
+    font-weight: 900;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+.right{
+    font-weight: 500;
+    font-family: Handwritten;
+    font-size: 22px;
+    line-height: auto;
+}
+.choose{
+    margin-top: 5rem;
+    padding: 6rem;
+}
+.horizontal-stripes {  
+     background: repeating-linear-gradient( 180deg, #fff, #fff 150px, #8d8e39ac 150px, #8d8e39ac 300px); 
+}
+.orderbutton{
+    background-color: rgb(255,225,0) !important;
+}
+
+ .eve{
+    opacity: 0.5;
+    height: 250px;
+    background-size:cover;
+
 }
 .nav-link {
     /* padding-right: 75px; */
@@ -30,36 +78,40 @@
     line-height: auto;
 }
 .choose{
-    margin-top: 5rem;
-    padding: 6rem;
+    margin-top: 8rem;
 }
 .horizontal-stripes {  
      background: repeating-linear-gradient( 180deg, #fff, #fff 150px, #8d8e39ac 150px, #8d8e39ac 300px); 
 }
 .pre{
-    background-size: auto;
-    
-    position:relative   ;
+    background-size:cover;
+    position: relative;
+
     background-repeat: no-repeat;
     background-image: url(assets/3759618_13.png);
-   
 }
 .aft{
-    background-image: url(assets/Image1_03.png);
-    background-size: contain;
-    position:relative   ;
+    background-size:cover;
+    position: relative;
+    
     background-repeat: no-repeat;
-    
-    
+    background-image: url(assets/Image1_03.png);
 }
 .active{
     background-image: url(assets/Image2_03.png);
-    background-size: contain;
-    position:relative   ;
-    background-repeat: no-repeat;
-   
-    
 }
+#active1{
+    opacity: 0.7;
+}
+
+
+.eve:hover{ 
+    transform: scaleY(1.2);
+    z-index: 5;
+    opacity: 1;
+  
+}
+
 
 .overlay {
     position: absolute;
@@ -102,9 +154,9 @@
     padding-left: 40px;
 }
 .book{
-    font-weight: 900;
+    font-weight: 500;
     font-size:65px;
-    font-family: 'Cabin Sketch', Times,serif;
+    font-family: Handwritten;
 }
 
 .footer{
