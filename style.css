@@ -182,19 +182,20 @@
         font-size: calc(.5rem + .5vw);
     }
     .exp{
-        margin-right: 2px;
+        margin: 0;
+        margin-right:calc(.8rem + .5vw);
         font-size: calc(.5rem + .5vw);
         margin-top: 5px;
     }
     .logo{
-        height: 50%;
+        height: 30%;
         margin: 0;
     }
     .order{
         font-size: 8px !important;
     }
     .nav-link {
-        padding-left: 5px;
+        padding:0 4px 0 4px !important;
         color: rgb(0, 0, 0) !important;
         font-weight: 900;
         font-family: 'Roboto', sans-serif;
@@ -202,20 +203,21 @@
         letter-spacing: 0;
     }
     .are{
-        
-        font-size: calc(1.5rem + 1vw);
+        margin-left: 0.5rem!important;
+        font-size: calc(0.8rem + .8vw);
     }
     .wait{
-        font-size: calc(1rem + 1.5vw);
+        font-size: calc(0.8rem + 1.2vw);
     }
-    .second{font-size: calc(0rem + .1vw);font-size: 10px;
+    .second{
+            font-size: calc(0.4rem + .1vw);
     }
     .right{
-        font-size: calc(.5rem + .5vw);
+        font-size: calc(.3rem + .3vw);
         margin: 0!important;
     }
     .one{
-        font-size: calc(.5rem + .5vw);
+        font-size: calc(.6rem + .6vw);
     }
     .choose{
         margin: 0;
@@ -223,12 +225,8 @@
     }
     .events{
         margin: 0;
-        padding: 0 !important;
-        font-size: calc(1.5rem + 1.5vw);
+       
+        font-size: calc(.5rem + 1.5vw);
     }
-    p{
-        margin: 0;
-        padding: 0;
-        font-size: calc(.2rem + .2vw);
-    }
+    
 }
