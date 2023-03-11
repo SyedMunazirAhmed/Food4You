@@ -7,39 +7,50 @@
     src: url(fonts/cursive.ttf);
 }
 
-
 *{
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
+.banner{
+    height: 100vh;
+    width: 100vw;
+}
 
-.header{
-    background-size:contain;
-    position: relative;
-    background-image: url(assets/a_01.png); 
-    background-repeat: no-repeat;
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.overlay::before{
+    content: "";
     height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    z-index: -2;
+}
+.logo{
+    margin-top: 20px;
 }
 .number{
     font-size: 25px;
     line-height: 0;
+    margin-top: 20px;
 }
+
 .exp{
     margin-right: 10px;
     font-size: 15px;
-    margin-top: 16px;
+    margin-top: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
     font-weight: 900 !important;
     
 }
-.order{
-    font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-}
 .nav-link {
-    padding-left: 75px;
+    padding-left: 65px;
     color: rgb(0, 0, 0) !important;
     font-weight: 900;
     font-family: 'Roboto', sans-serif;
@@ -59,15 +70,26 @@
     font-size: 80px;
     font-family: Handwritten;
 }
-.right{
-    font-weight: 500;
+
+.monday{
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+.order{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.events{
+    font-size: 60px;
     font-family: Handwritten;
-    font-size: 22px;
-    line-height: auto;
+    padding:0  3rem 0 3rem;
+    margin-top: 2rem;
 }
 .choose{
     margin-top: 5rem;
-    padding: 6rem;
+    padding: 3rem;
 }
 .horizontal-stripes {  
      background: repeating-linear-gradient( 180deg, #fff, #fff 150px, #8d8e39ac 150px, #8d8e39ac 300px); 
@@ -79,18 +101,6 @@
     font-weight: 900 !important;
 }
 
-.nav-link {
-    padding-left: 75px;
-    color: rgb(0, 0, 0) !important;
-    font-weight: 900;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 6px;
-}
-.second{
-    font-weight: 900;
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif;
-}
 .right{
     font-weight: 900;
     font-family: 'Cabin Sketch', Times,serif;
@@ -101,16 +111,11 @@
     font-size: 70px;
     font-weight: 600;
 }
-.choose{
-    margin-top: 7rem;
-}
+
 .horizontal-stripes {  
      background: repeating-linear-gradient( 180deg, #fff, #fff 150px, #8d8e39ac 150px, #8d8e39ac 300px); 
 }
-.events{
-    font-size: 60px;
-    font-family: Handwritten;
-}
+
 
 .alignedimgs{
     display: flex;
@@ -135,32 +140,6 @@
 .lorem{
     font-weight: 900;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    padding-left: 25px;
-    padding-top: 15px;
-    width: 100%;
-    color: white;
-    font-size: 20px;
-    z-index: 5;
-}
-
-.overlay::before{
-    content: "";
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    position: absolute;
-    left:0;
-    bottom: 50px;
-    z-index: -2;
-    opacity: 0.5;
-    transition: all 0.3s ease-out;
-}
- .overlay::before{
-    bottom: 0px;
 }
 
 .head-text{
@@ -189,16 +168,67 @@
 }
 
 .footer{
-    background-size:contain;
+    background-size:100vh;
     position: relative;
     height: 100%;
     background-repeat: no-repeat;
     background: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("assets/BG-Image_03.jpg");
 }
-.copy{
-    margin-top: 10rem;
-}
-.location{
-    font-size: 18px;
-    margin: 13rem 0 0 6rem;
+
+@media (max-width: 767px) {
+    
+    .number{
+        line-height: 0;
+        font-size: calc(.5rem + .5vw);
+    }
+    .exp{
+        margin-right: 2px;
+        font-size: calc(.5rem + .5vw);
+        margin-top: 5px;
+    }
+    .logo{
+        height: 50%;
+        margin: 0;
+    }
+    .order{
+        font-size: 8px !important;
+    }
+    .nav-link {
+        padding-left: 5px;
+        color: rgb(0, 0, 0) !important;
+        font-weight: 900;
+        font-family: 'Roboto', sans-serif;
+        font-size: x-small !important;  
+        letter-spacing: 0;
+    }
+    .are{
+        
+        font-size: calc(1.5rem + 1vw);
+    }
+    .wait{
+        font-size: calc(1rem + 1.5vw);
+    }
+    .second{font-size: calc(0rem + .1vw);font-size: 10px;
+    }
+    .right{
+        font-size: calc(.5rem + .5vw);
+        margin: 0!important;
+    }
+    .one{
+        font-size: calc(.5rem + .5vw);
+    }
+    .choose{
+        margin: 0;
+        padding: 0;
+    }
+    .events{
+        margin: 0;
+        padding: 0 !important;
+        font-size: calc(1.5rem + 1.5vw);
+    }
+    p{
+        margin: 0;
+        padding: 0;
+        font-size: calc(.2rem + .2vw);
+    }
 }
